@@ -101,7 +101,7 @@ local set_groups = function()
         Conditional = { fg = c.blue, bg = c.none, bold = cfg.keyword_style.bold, italic = cfg.keyword_style.italic }, -- italic if, then, else, endif, switch, etc.
         Keyword = { fg = c.blue, bg = c.none, bold = cfg.keyword_style.bold, italic = cfg.keyword_style.italic },     -- italic for, do, while, etc.
         Repeat = { fg = c.blue, bg = c.none, bold = cfg.keyword_style.bold, italic = cfg.keyword_style.italic },      -- italic any other keyword
-        Boolean = { fg = c.cyan, bg = c.none, bold = cfg.boolean_style.bold, italic = cfg.boolean_style.italic },     -- true , false
+        Boolean = { fg = c.red, bg = c.none, bold = cfg.boolean_style.bold, italic = cfg.boolean_style.italic },      -- true , false
         Function = { fg = c.green, bg = c.none, bold = cfg.function_style.bold, italic = cfg.function_style.italic },
         Identifier = { fg = c.blue, bg = c.none },                                                                    -- any variable name
         String = { fg = c.cyan, bg = c.none },                                                                        -- Any string
@@ -177,7 +177,7 @@ local set_groups = function()
         -- TreeSitter highlight groups
         TSAnnotation = { fg = c.green },                                                                              -- For C++/Dart attributes, annotations that can be attached to the code to denote some kind of meta information.
         TSAttribute = { fg = c.fg },                                                                                  -- (unstable) TODO: docs
-        TSBoolean = { fg = c.cyan, bg = c.none, bold = cfg.boolean_style.bold, italic = cfg.boolean_style.italic },   -- true or false
+        TSBoolean = { fg = c.red, bg = c.none, bold = cfg.boolean_style.bold, italic = cfg.boolean_style.italic },    -- true or false
         TSCharacter = { fg = c.cyan },                                                                                -- For characters.
         TSComment = { fg = c.gray05, bg = c.none, bold = cfg.comment_style.bold, italic = cfg.comment_style.italic }, -- For comment blocks.
         TSConditional = { fg = c.blue, bold = cfg.keyword_style.bold, italic = cfg.keyword_style.italic },            -- For keywords related to conditionnals.
