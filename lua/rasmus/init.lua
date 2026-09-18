@@ -205,7 +205,7 @@ local set_groups = function()
         TSOperator = { fg = c.yellow },                                                                               -- For any operator: `+`, but also `->` and `*` in C.
         TSParameter = { fg = c.fg },                                                                                  -- For parameters of a function.
         TSParameterReference = { fg = c.fg },                                                                         -- For references to parameters of a function.
-        TSProperty = { fg = c.blue },                                                                                 -- Same as `TSField`.
+        TSProperty = { fg = c.fg },                                                                                   -- Same as `TSField`.
         TSPunctDelimiter = { fg = c.gray05 },                                                                         -- For delimiters ie: `.`
         TSPunctBracket = { fg = c.gray05 },                                                                           -- For brackets and parens.
         TSPunctSpecial = { fg = c.green },                                                                            -- For special punctutation that does not fall in the catagories before.
